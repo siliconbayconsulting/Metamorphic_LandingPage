@@ -1,5 +1,6 @@
 import type { NextPage } from "next";
 import React,{useEffect, useState} from 'react';
+import { ButtonLink } from "components/button-link/button-link";
 //import './Questionnaire.css'
 //import axios from 'axios';
 //import {useNavigate} from 'react-router-dom';
@@ -18,7 +19,8 @@ import { Field, Form } from "@saas-ui/react";
         useColorModeValue,
         Flex,
         ChakraProvider,
-        Select
+        Select,
+        
     } from "@chakra-ui/react";
     
 
@@ -185,7 +187,14 @@ const Lead: NextPage = ({ posts }: any) => {
                                 <FormErrorMessage>Select option</FormErrorMessage>)}
                             </FormControl>
                             <Flex justify="center" mt={6}>
-                            <Button onSubmit={handleSubmit}>Send Me My Free Workout Plan</Button>
+                            {/* <Button onSubmit={handleSubmit}>Send Me My Free Workout Plan</Button> */}
+                             <ButtonLink
+                                                                bgColor={"red"}
+                                                                size="lg"
+                                                                href="/#"
+                                                            >
+                                                               Send Me My Free Workout Plan !
+                                                            </ButtonLink>
                             </Flex>
                 </Box>
             </Flex>);
