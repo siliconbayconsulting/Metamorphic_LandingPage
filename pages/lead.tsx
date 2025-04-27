@@ -2,8 +2,8 @@ import type { NextPage } from "next";
 import React,{useEffect, useState} from 'react';
 import { ButtonLink } from "components/button-link/button-link";
 //import './Questionnaire.css'
-//import axios from 'axios';
-//import {useNavigate} from 'react-router-dom';
+import axios from 'axios';
+import {useNavigate} from 'react-router-dom';
 // import { ChakraProvider } from '@chakra-ui/react';
 // import ReactDOM from 'react-dom/client';
 import { defineStyle } from "@chakra-ui/react"
@@ -33,15 +33,13 @@ const Lead: NextPage = ({ posts }: any) => {
     const [age,setAge] = useState(0);
     const [email,setEmail] = useState("");
     const [phoneNo,setPhoneNo] = useState("");
-    const [fitnessEnthusiast,setFitnessEnthusiast] = useState(null);
-    const [fitnessTrainer,setFitnessTrainer] = useState(null);
+    const [enthusiastTrainer,setenthusiastTrainer] = useState(null);
     const submitData = {
         name,
         age,
         email,
         phoneNo,
-        fitnessEnthusiast,
-        fitnessTrainer
+        enthusiastTrainer
     }
 
    // const [errors,setErrors] = useState({});
@@ -50,8 +48,7 @@ const Lead: NextPage = ({ posts }: any) => {
         age:'',
         email:'',
         phoneNo:'',
-        fitnessEnthusiast:'',
-        fitnessTrainer:'fill in'
+        enthusiastTrainer:''
     }
 
     const validateForm = (data) => {
@@ -88,11 +85,8 @@ const Lead: NextPage = ({ posts }: any) => {
         else if(submitData.phoneNo.trim){
             errors.phoneNo = 'phone no required';
         }
-        else if(submitData.fitnessEnthusiast.trim){
-            errors.fitnessEnthusiast = 'Please select yes or no';
-        }
-        else if(submitData.fitnessTrainer.trim){
-            errors.fitnessTrainer = 'Please select yes or no';
+        else if(submitData.enthusiastTrainer.trim){
+            errors.enthusiastTrainer = 'Please select yes or no';
         }
     }
 
@@ -100,20 +94,24 @@ const Lead: NextPage = ({ posts }: any) => {
     const isAgeError = age === 0;
     const isEmailError = email === '';
     const isPhoneNoError = phoneNo === '';
-    const isFitnessEnthusiastError = fitnessEnthusiast === null;
+    const isEnthusiastTrainerError = enthusiastTrainer === null;
 
-    const isFitnessTrainerError = fitnessTrainer === null || fitnessTrainer === undefined;
+    // const navigate = useNavigate();
 
-    const handleSubmit = (e)=>{
-        e.preventDefault();
-      //  setErrorMessages();
+    const handleSubmit = (event)=>{
+        event.preventDefault();
+        axios.post('http://localhost:8000/lead',submitData)
+        .then((response)=>{
+            // navigate('/program',{state:{'name':name}})
+        })
+        .catch((err)=>{alert(err);})
     }
 
     return ( <Flex direction="column" minHeight="100vh">
                 <Box as="section" py={120} px={300} flex="1">
                     <FormControl> 
                         <Heading>
-                            <center>Claim you’re free workout program. Offer valid only for the first 50 customers who sign up!</center>
+                            <center>Claim your free workout program. Offer valid only for the first 50 customers who sign up!</center>
                         </Heading>
 
                 </FormControl>
@@ -146,18 +144,18 @@ const Lead: NextPage = ({ posts }: any) => {
       
                     <FormLabel>Phone No</FormLabel>
                         <FormControl variant='floating' id="PhoneNo" isRequired isInvalid={isPhoneNoError}>
-                            <Input placeholder="PhoneNo" onChange={(e)=>setPhoneNo(Number(e.target.value))}/>
+                            <Input placeholder="PhoneNo" onChange={(e)=>setPhoneNo(e.target.value)}/>
                             {/* <Input className="peer" placeholder={leadInfo.firstName} onChange={(e) => setFirstName(e.target.value)}/> */}
                             {/* <Field.Label css={floatingStyles}>Email</Field.Label> */}
                             {isPhoneNoError ?(<FormHelperText>Please enter your contact number</FormHelperText>):(
                         <FormErrorMessage>Fill in your Contact</FormErrorMessage>)}
                         </FormControl>
 
-                    <FormLabel>Are you a fitness enthusiast?</FormLabel>
-                            <FormControl variant='floating' id="fitness-enthusiast" isRequired isInvalid={isFitnessEnthusiastError}>
+                    <FormLabel>Are you a fitness enthusiast/trainer?</FormLabel>
+                            <FormControl variant='floating' id="fitness-enthusiast" isRequired isInvalid={isEnthusiastTrainerError}>
                                 <Select placeholder="Select option" onChange={(e) => {
     const value = e.target.value;
-    setFitnessEnthusiast(
+    setenthusiastTrainer(
         value === 'yes' ? true : value === 'no' ? false : null
       );
   }}>
@@ -166,35 +164,19 @@ const Lead: NextPage = ({ posts }: any) => {
                                 {/* <Input className="peer" placeholder={leadInfo.firstName} onChange={(e) => setFirstName(e.target.value)}/> */}
                                 {/* <Field.Label css={floatingStyles}>Email</Field.Label> */}
                                 </Select>
-                                {isFitnessEnthusiastError ?(<FormHelperText>Please select option</FormHelperText>):(
+                                {isEnthusiastTrainerError ?(<FormHelperText>Please select option</FormHelperText>):(
                                 <FormErrorMessage>Select option</FormErrorMessage>)}
                             </FormControl>
 
-                            <FormLabel>Are you a fitness trainer?</FormLabel>
-                            <FormControl variant='floating' id="fitness-trainer" isRequired isInvalid={isFitnessTrainerError}>
-                                <Select placeholder="Select option" onChange={(e) => {
-    const value = e.target.value;
-    setFitnessTrainer(
-        value === 'yes' ? true : value === 'no' ? false : null
-      );
-  }}>
-                                <option value='yes'>Yes</option>
-                                <option value='no'>No</option>
-                                {/* <Input className="peer" placeholder={leadInfo.firstName} onChange={(e) => setFirstName(e.target.value)}/> */}
-                                {/* <Field.Label css={floatingStyles}>Email</Field.Label> */}
-                                </Select>
-                                {isFitnessTrainerError ?(<FormHelperText>Please select option</FormHelperText>):(
-                                <FormErrorMessage>Select option</FormErrorMessage>)}
-                            </FormControl>
                             <Flex justify="center" mt={6}>
                             {/* <Button onSubmit={handleSubmit}>Send Me My Free Workout Plan</Button> */}
-                             <ButtonLink
+                             <Button onClick={handleSubmit}
                                                                 bgColor={"red"}
                                                                 size="lg"
-                                                                href="/#"
+                                                         
                                                             >
-                                                               Send Me My Free Workout Plan !
-                                                            </ButtonLink>
+                                                               Send Me My Free Workout Plan!
+                                                            </Button>
                             </Flex>
                 </Box>
             </Flex>);
