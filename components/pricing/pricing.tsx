@@ -45,7 +45,7 @@ export const Pricing: React.FC<PricingProps> = (props) => {
                     description={description}
                 ></SectionTitle>
 
-                <SimpleGrid columns={[1, null, 3]} spacing={4}>
+                <SimpleGrid columns={[1, null, 4]} spacing={4}>
                     {plans?.map((plan) => (
                         <PricingBox
                             key={plan.id}

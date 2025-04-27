@@ -25,6 +25,7 @@ import { Field, Form } from "@saas-ui/react";
     
 
 import Head from 'next/head';
+import { useRouter } from "next/router";
     
 
 const Lead: NextPage = ({ posts }: any) => {
@@ -97,12 +98,13 @@ const Lead: NextPage = ({ posts }: any) => {
     const isEnthusiastTrainerError = enthusiastTrainer === null;
 
     // const navigate = useNavigate();
-
+    const router = useRouter();
     const handleSubmit = (event)=>{
         event.preventDefault();
         axios.post('http://localhost:8000/lead',submitData)
         .then((response)=>{
-            // navigate('/program',{state:{'name':name}})
+            router.push('/#');
+            //  navigate('/program',{state:{'name':name}})
         })
         .catch((err)=>{alert(err);})
     }

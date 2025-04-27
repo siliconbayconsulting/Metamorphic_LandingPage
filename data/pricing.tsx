@@ -5,6 +5,49 @@ export default {
     description: "Start off small and get access to a world-class trainer.",
     plans: [
         {
+            id: "cp",
+            title: "Custom Plan",
+            description: "Get a customised plan just for yourself.",
+            price: (
+                <HStack>
+                    {/* <Text textDecoration="line-through" fontSize="sm" color="gray.400">
+          ₹999
+          </Text> */}
+                    <Text>₹499</Text>
+                </HStack>
+            ),
+            features: [
+                {
+                    title: "Fun, energetic classes designed to keep you motivated and engaged.",
+                    iconColor: "green.500",
+                },
+                {
+                    title: "Perfect for beginners or anyone looking to get back into fitness.",
+                    iconColor: "green.500",
+                },
+                {
+                    title: "Build a supportive community and train alongside others.",
+                    iconColor: "green.500",
+                },
+                {
+                    title: "Classes available at convenient times to fit your schedule.",
+                    iconColor: "green.500",
+                },
+                {
+                    title: "Global access—join from anywhere in the world.",
+                    iconColor: "green.500",
+                },
+                {
+                    title: "Book a class and pay directly through our website.",
+                    iconColor: "green.500",
+                },
+            ],
+            action: {
+                href: "/lead",
+                label: "Customized plan!"
+            },
+        },
+        {
             id: "gs",
             title: "Group Classes",
             description: "Basic workouts, perfect to get started.",
