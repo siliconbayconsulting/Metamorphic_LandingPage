@@ -103,7 +103,8 @@ const Lead: NextPage = ({ posts }: any) => {
         event.preventDefault();
         axios.post('http://localhost:8000/lead',submitData)
         .then((response)=>{
-            router.push('/#');
+            
+            router.push('/freeplan');
             //  navigate('/program',{state:{'name':name}})
         })
         .catch((err)=>{alert(err);})
