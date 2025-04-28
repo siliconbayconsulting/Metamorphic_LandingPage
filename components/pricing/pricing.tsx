@@ -75,8 +75,8 @@ export const Pricing: React.FC<PricingProps> = (props) => {
                             </PricingFeatures>
                             <Button
                                 as="a"
-                                target="_blank"
-                                rel="noopener noreferrer"
+                                // target="_blank"
+                                // rel="noopener noreferrer"
                                 colorScheme="primary"
                                 leftIcon={<FaWhatsapp size="18" />}
                                 {...plan.action}
