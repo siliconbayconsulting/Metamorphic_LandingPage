@@ -29,6 +29,9 @@ importers:
       '@fontsource/inter':
         specifier: ^4.5.15
         version: 4.5.15
+      '@react-email/components':
+        specifier: ^0.0.36
+        version: 0.0.36(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       '@saas-ui/auth':
         specifier: ^3.0.6
         version: 3.0.6(@chakra-ui/react@2.8.2(@emotion/react@11.11.4(@types/react@18.2.0)(react@18.2.0))(@emotion/styled@11.11.5(@emotion/react@11.11.4(@types/react@18.2.0)(react@18.2.0))(@types/react@18.2.0)(react@18.2.0))(@types/react@18.2.0)(framer-motion@10.18.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(@emotion/react@11.11.4(@types/react@18.2.0)(react@18.2.0))(@emotion/styled@11.11.5(@emotion/react@11.11.4(@types/react@18.2.0)(react@18.2.0))(@types/react@18.2.0)(react@18.2.0))(framer-motion@10.18.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
@@ -51,14 +54,14 @@ importers:
         specifier: ^10.18.0
         version: 10.18.0(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       next:
-        specifier: ^14.1.4
-        version: 14.1.4(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        specifier: ^13
+        version: 13.5.11(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       next-contentlayer:
         specifier: ^0.3.4
-        version: 0.3.4(contentlayer@0.3.4(esbuild@0.18.20))(esbuild@0.18.20)(next@14.1.4(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 0.3.4(contentlayer@0.3.4(esbuild@0.18.20))(esbuild@0.18.20)(next@13.5.11(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       next-seo:
         specifier: ^6.5.0
-        version: 6.5.0(next@14.1.4(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+        version: 6.5.0(next@13.5.11(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       razorpay:
         specifier: ^2.9.6
         version: 2.9.6
@@ -77,6 +80,9 @@ importers:
       react-router-dom:
         specifier: ^7.5.2
         version: 7.5.2(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      resend:
+        specifier: ^4.4.1
+        version: 4.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
     devDependencies:
       '@babel/core':
         specifier: ^7.24.4
@@ -1561,62 +1567,62 @@ packages:
   '@mdx-js/mdx@2.3.0':
     resolution: {integrity: sha512-jLuwRlz8DQfQNiUCJR50Y09CGPq3fLtmtUQfVrj79E0JWu3dvsVcxVIcfhR5h0iXu+/z++zDrYeiJqifRynJkA==}
 
-  '@next/env@14.1.4':
-    resolution: {integrity: sha512-e7X7bbn3Z6DWnDi75UWn+REgAbLEqxI8Tq2pkFOFAMpWAWApz/YCUhtWMWn410h8Q2fYiYL7Yg5OlxMOCfFjJQ==}
+  '@next/env@13.5.11':
+    resolution: {integrity: sha512-fbb2C7HChgM7CemdCY+y3N1n8pcTKdqtQLbC7/EQtPdLvlMUT9JX/dBYl8MMZAtYG4uVMyPFHXckb68q/NRwqg==}
 
   '@next/eslint-plugin-next@13.3.1':
     resolution: {integrity: sha512-Hpd74UrYGF+bq9bBSRDXRsRfaWkPpcwjhvachy3sr/R/5fY6feC0T0s047pUthyqcaeNsqKOY1nUGQQJNm4WyA==}
 
-  '@next/swc-darwin-arm64@14.1.4':
-    resolution: {integrity: sha512-ubmUkbmW65nIAOmoxT1IROZdmmJMmdYvXIe8211send9ZYJu+SqxSnJM4TrPj9wmL6g9Atvj0S/2cFmMSS99jg==}
+  '@next/swc-darwin-arm64@13.5.9':
+    resolution: {integrity: sha512-pVyd8/1y1l5atQRvOaLOvfbmRwefxLhqQOzYo/M7FQ5eaRwA1+wuCn7t39VwEgDd7Aw1+AIWwd+MURXUeXhwDw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [darwin]
 
-  '@next/swc-darwin-x64@14.1.4':
-    resolution: {integrity: sha512-b0Xo1ELj3u7IkZWAKcJPJEhBop117U78l70nfoQGo4xUSvv0PJSTaV4U9xQBLvZlnjsYkc8RwQN1HoH/oQmLlQ==}
+  '@next/swc-darwin-x64@13.5.9':
+    resolution: {integrity: sha512-DwdeJqP7v8wmoyTWPbPVodTwCybBZa02xjSJ6YQFIFZFZ7dFgrieKW4Eo0GoIcOJq5+JxkQyejmI+8zwDp3pwA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [darwin]
 
-  '@next/swc-linux-arm64-gnu@14.1.4':
-    resolution: {integrity: sha512-457G0hcLrdYA/u1O2XkRMsDKId5VKe3uKPvrKVOyuARa6nXrdhJOOYU9hkKKyQTMru1B8qEP78IAhf/1XnVqKA==}
+  '@next/swc-linux-arm64-gnu@13.5.9':
+    resolution: {integrity: sha512-wdQsKsIsGSNdFojvjW3Ozrh8Q00+GqL3wTaMjDkQxVtRbAqfFBtrLPO0IuWChVUP2UeuQcHpVeUvu0YgOP00+g==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-arm64-musl@14.1.4':
-    resolution: {integrity: sha512-l/kMG+z6MB+fKA9KdtyprkTQ1ihlJcBh66cf0HvqGP+rXBbOXX0dpJatjZbHeunvEHoBBS69GYQG5ry78JMy3g==}
+  '@next/swc-linux-arm64-musl@13.5.9':
+    resolution: {integrity: sha512-6VpS+bodQqzOeCwGxoimlRoosiWlSc0C224I7SQWJZoyJuT1ChNCo+45QQH+/GtbR/s7nhaUqmiHdzZC9TXnXA==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [linux]
 
-  '@next/swc-linux-x64-gnu@14.1.4':
-    resolution: {integrity: sha512-BapIFZ3ZRnvQ1uWbmqEGJuPT9cgLwvKtxhK/L2t4QYO7l+/DxXuIGjvp1x8rvfa/x1FFSsipERZK70pewbtJtw==}
+  '@next/swc-linux-x64-gnu@13.5.9':
+    resolution: {integrity: sha512-XxG3yj61WDd28NA8gFASIR+2viQaYZEFQagEodhI/R49gXWnYhiflTeeEmCn7Vgnxa/OfK81h1gvhUZ66lozpw==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-linux-x64-musl@14.1.4':
-    resolution: {integrity: sha512-mqVxTwk4XuBl49qn2A5UmzFImoL1iLm0KQQwtdRJRKl21ylQwwGCxJtIYo2rbfkZHoSKlh/YgztY0qH3wG1xIg==}
+  '@next/swc-linux-x64-musl@13.5.9':
+    resolution: {integrity: sha512-/dnscWqfO3+U8asd+Fc6dwL2l9AZDl7eKtPNKW8mKLh4Y4wOpjJiamhe8Dx+D+Oq0GYVjuW0WwjIxYWVozt2bA==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [linux]
 
-  '@next/swc-win32-arm64-msvc@14.1.4':
-    resolution: {integrity: sha512-xzxF4ErcumXjO2Pvg/wVGrtr9QQJLk3IyQX1ddAC/fi6/5jZCZ9xpuL9Tzc4KPWMFq8GGWFVDMshZOdHGdkvag==}
+  '@next/swc-win32-arm64-msvc@13.5.9':
+    resolution: {integrity: sha512-T/iPnyurOK5a4HRUcxAlss8uzoEf5h9tkd+W2dSWAfzxv8WLKlUgbfk+DH43JY3Gc2xK5URLuXrxDZ2mGfk/jw==}
     engines: {node: '>= 10'}
     cpu: [arm64]
     os: [win32]
 
-  '@next/swc-win32-ia32-msvc@14.1.4':
-    resolution: {integrity: sha512-WZiz8OdbkpRw6/IU/lredZWKKZopUMhcI2F+XiMAcPja0uZYdMTZQRoQ0WZcvinn9xZAidimE7tN9W5v9Yyfyw==}
+  '@next/swc-win32-ia32-msvc@13.5.9':
+    resolution: {integrity: sha512-BLiPKJomaPrTAb7ykjA0LPcuuNMLDVK177Z1xe0nAem33+9FIayU4k/OWrtSn9SAJW/U60+1hoey5z+KCHdRLQ==}
     engines: {node: '>= 10'}
     cpu: [ia32]
     os: [win32]
 
-  '@next/swc-win32-x64-msvc@14.1.4':
-    resolution: {integrity: sha512-4Rto21sPfw555sZ/XNLqfxDUNeLhNYGO2dlPqsnuCg8N8a2a9u1ltqBOPQ4vj1Gf7eJC0W2hHG2eYUHuiXgY2w==}
+  '@next/swc-win32-x64-msvc@13.5.9':
+    resolution: {integrity: sha512-/72/dZfjXXNY/u+n8gqZDjI6rxKMpYsgBBYNZKWOQw0BpBF7WCnPflRy3ZtvQ2+IYI3ZH2bPyj7K+6a6wNk90Q==}
     engines: {node: '>= 10'}
     cpu: [x64]
     os: [win32]
@@ -1795,6 +1801,131 @@ packages:
     peerDependencies:
       react: ^16.8.0 || ^17.0.0-rc.1 || ^18.0.0
 
+  '@react-email/body@0.0.11':
+    resolution: {integrity: sha512-ZSD2SxVSgUjHGrB0Wi+4tu3MEpB4fYSbezsFNEJk2xCWDBkFiOeEsjTmR5dvi+CxTK691hQTQlHv0XWuP7ENTg==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/button@0.0.19':
+    resolution: {integrity: sha512-HYHrhyVGt7rdM/ls6FuuD6XE7fa7bjZTJqB2byn6/oGsfiEZaogY77OtoLL/mrQHjHjZiJadtAMSik9XLcm7+A==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/code-block@0.0.12':
+    resolution: {integrity: sha512-Faw3Ij9+/Qwq6moWaeHnV8Hn7ekc/EqyAzPi6yUar21dhcqYugCC4Da1x4d9nA9zC0H9KU3lYVJczh8D3cA+Eg==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/code-inline@0.0.5':
+    resolution: {integrity: sha512-MmAsOzdJpzsnY2cZoPHFPk6uDO/Ncpb4Kh1hAt9UZc1xOW3fIzpe1Pi9y9p6wwUmpaeeDalJxAxH6/fnTquinA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/column@0.0.13':
+    resolution: {integrity: sha512-Lqq17l7ShzJG/d3b1w/+lVO+gp2FM05ZUo/nW0rjxB8xBICXOVv6PqjDnn3FXKssvhO5qAV20lHM6S+spRhEwQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/components@0.0.36':
+    resolution: {integrity: sha512-VMh+OQplAnG8JMLlJjdnjt+ThJZ+JVkp0q2YMS2NEz+T88N22bLD2p7DZO0QgtNaKgumOhJI/0a2Q7VzCrwu5g==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/container@0.0.15':
+    resolution: {integrity: sha512-Qo2IQo0ru2kZq47REmHW3iXjAQaKu4tpeq/M8m1zHIVwKduL2vYOBQWbC2oDnMtWPmkBjej6XxgtZByxM6cCFg==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/font@0.0.9':
+    resolution: {integrity: sha512-4zjq23oT9APXkerqeslPH3OZWuh5X4crHK6nx82mVHV2SrLba8+8dPEnWbaACWTNjOCbcLIzaC9unk7Wq2MIXw==}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/head@0.0.12':
+    resolution: {integrity: sha512-X2Ii6dDFMF+D4niNwMAHbTkeCjlYYnMsd7edXOsi0JByxt9wNyZ9EnhFiBoQdqkE+SMDcu8TlNNttMrf5sJeMA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/heading@0.0.15':
+    resolution: {integrity: sha512-xF2GqsvBrp/HbRHWEfOgSfRFX+Q8I5KBEIG5+Lv3Vb2R/NYr0s8A5JhHHGf2pWBMJdbP4B2WHgj/VUrhy8dkIg==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/hr@0.0.11':
+    resolution: {integrity: sha512-S1gZHVhwOsd1Iad5IFhpfICwNPMGPJidG/Uysy1AwmspyoAP5a4Iw3OWEpINFdgh9MHladbxcLKO2AJO+cA9Lw==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/html@0.0.11':
+    resolution: {integrity: sha512-qJhbOQy5VW5qzU74AimjAR9FRFQfrMa7dn4gkEXKMB/S9xZN8e1yC1uA9C15jkXI/PzmJ0muDIWmFwatm5/+VA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/img@0.0.11':
+    resolution: {integrity: sha512-aGc8Y6U5C3igoMaqAJKsCpkbm1XjguQ09Acd+YcTKwjnC2+0w3yGUJkjWB2vTx4tN8dCqQCXO8FmdJpMfOA9EQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/link@0.0.12':
+    resolution: {integrity: sha512-vF+xxQk2fGS1CN7UPQDbzvcBGfffr+GjTPNiWM38fhBfsLv6A/YUfaqxWlmL7zLzVmo0K2cvvV9wxlSyNba1aQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/markdown@0.0.14':
+    resolution: {integrity: sha512-5IsobCyPkb4XwnQO8uFfGcNOxnsg3311GRXhJ3uKv51P7Jxme4ycC/MITnwIZ10w2zx7HIyTiqVzTj4XbuIHbg==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/preview@0.0.12':
+    resolution: {integrity: sha512-g/H5fa9PQPDK6WUEG7iTlC19sAktI23qyoiJtMLqQiXFCfWeQMhqjLGKeLSKkfzszqmfJCjZtpSiKtBoOdxp3Q==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/render@1.0.6':
+    resolution: {integrity: sha512-zNueW5Wn/4jNC1c5LFgXzbUdv5Lhms+FWjOvWAhal7gx5YVf0q6dPJ0dnR70+ifo59gcMLwCZEaTS9EEuUhKvQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+      react-dom: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/row@0.0.12':
+    resolution: {integrity: sha512-HkCdnEjvK3o+n0y0tZKXYhIXUNPDx+2vq1dJTmqappVHXS5tXS6W5JOPZr5j+eoZ8gY3PShI2LWj5rWF7ZEtIQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/section@0.0.16':
+    resolution: {integrity: sha512-FjqF9xQ8FoeUZYKSdt8sMIKvoT9XF8BrzhT3xiFKdEMwYNbsDflcjfErJe3jb7Wj/es/lKTbV5QR1dnLzGpL3w==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/tailwind@1.0.4':
+    resolution: {integrity: sha512-tJdcusncdqgvTUYZIuhNC6LYTfL9vNTSQpwWdTCQhQ1lsrNCEE4OKCSdzSV3S9F32pi0i0xQ+YPJHKIzGjdTSA==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
+  '@react-email/text@0.1.1':
+    resolution: {integrity: sha512-Zo9tSEzkO3fODLVH1yVhzVCiwETfeEL5wU93jXKWo2DHoMuiZ9Iabaso3T0D0UjhrCB1PBMeq2YiejqeToTyIQ==}
+    engines: {node: '>=18.0.0'}
+    peerDependencies:
+      react: ^18.0 || ^19.0 || ^19.0.0-rc
+
   '@react-stately/utils@3.9.1':
     resolution: {integrity: sha512-yzw75GE0iUWiyps02BOAPTrybcsMIxEJlzXqtvllAb01O9uX5n0i3X+u2eCpj2UoDF4zS08Ps0jPgWxg8xEYtA==}
     peerDependencies:
@@ -1910,6 +2041,9 @@ packages:
     peerDependencies:
       react: '>=18.0.0'
       react-dom: '>=18.0.0'
+
+  '@selderee/plugin-htmlparser2@0.11.0':
+    resolution: {integrity: sha512-P33hHGdldxGabLFjPPpaTxVolMrzrcegejx+0GxjrIb9Zv48D8yAIA/QTDR2dFl7Uz7urX8aX6+5bCZslr+gWQ==}
 
   '@svgr/babel-plugin-add-jsx-attribute@7.0.0':
     resolution: {integrity: sha512-khWbXesWIP9v8HuKCl2NU2HNAyqpSQ/vkIl36Nbn4HIwEYSRWL0H7Gs6idJdha2DkpFDWlsqMELvoCE8lfFY6Q==}
@@ -2781,6 +2915,9 @@ packages:
   extend@3.0.2:
     resolution: {integrity: sha512-fjquC59cD7CyW6urNXK0FBufkZcoiGG80wTuPujX590cB5Ttln20E2UB4S/WARVqhXffZl2LNgS+gQdPIIim/g==}
 
+  fast-deep-equal@2.0.1:
+    resolution: {integrity: sha512-bCK/2Z4zLidyB4ReuIsvALH6w31YfAQDmXMqMx6FyfHqvBxtjC0eRumeSu4Bs3XtXwpyIywtSTrVT99BxY1f9w==}
+
   fast-deep-equal@3.1.3:
     resolution: {integrity: sha512-f3qQ9oQy9j2AhBe/H9VC91wLmKBCCU/gDOnKNAYG5hswO7BLKj09Hc5HYNz9cGI++xlpDCIgDaitVs03ATR84Q==}
 
@@ -2928,6 +3065,9 @@ packages:
     resolution: {integrity: sha512-XxwI8EOhVQgWp6iDL+3b0r86f4d6AX6zSU55HfB4ydCEuXLXc5FcYeOu+nnGftS4TEju/11rt4KJPTMgbfmv4A==}
     engines: {node: '>=10.13.0'}
 
+  glob-to-regexp@0.4.1:
+    resolution: {integrity: sha512-lkX1HJXwyMcprw/5YUZc2s7DrpAiHB21/V+E1rHUrVNokkvB6bqMzT0VfV6/86ZNabt1k14YOIaT7nDvOX3Iiw==}
+
   glob@7.1.7:
     resolution: {integrity: sha512-OvD9ENzPLbegENnYP5UUfJIirTg4+XwMWGaQfQTY0JenxNvvIKP3U3/tAQSPIu/lHxXYSZmpXlUHeqAIdKzBLQ==}
 
@@ -3035,8 +3175,15 @@ packages:
   hoist-non-react-statics@3.3.2:
     resolution: {integrity: sha512-/gGivxi8JPKWNm/W0jSmzcMPpfpPLc3dY/6GxhX2hQ9iGj3aDfklV4ET7NjKpSinLpJ5vafa9iiGIEZg10SfBw==}
 
+  html-to-text@9.0.5:
+    resolution: {integrity: sha512-qY60FjREgVZL03vJU6IfMV4GDjGBIoOyvuFdpBDIX9yTlDw0TjxVBQp+P8NvpdIXNJvfWBTNul7fsAQJq2FNpg==}
+    engines: {node: '>=14'}
+
   html-void-elements@2.0.1:
     resolution: {integrity: sha512-0quDb7s97CfemeJAnW9wC0hw78MtW7NU3hqtCD75g2vFlDLt36llsYD7uB7SUzojLMP24N5IatXf7ylGXiGG9A==}
+
+  htmlparser2@8.0.2:
+    resolution: {integrity: sha512-GYdjWKDkbRLkZ5geuHs5NY1puJ+PXwP7+fHPRz06Eirsb9ugf6d8kkXav6ADhcODhFFPMIXyxkxSuMf3D6NCFA==}
 
   ignore@5.3.1:
     resolution: {integrity: sha512-5Fytz/IraMjqpwfd34ke28PTVMjZjJG2MPn5t7OE4eUCUNf8BAa7b5WUS9/Qvr6mwOQS7Mk6vdsMno5he+T8Xw==}
@@ -3294,6 +3441,9 @@ packages:
     resolution: {integrity: sha512-MbjN408fEndfiQXbFQ1vnd+1NoLDsnQW41410oQBXiyXDMYH5z505juWa4KUE1LqxRC7DgOgZDbKLxHIwm27hA==}
     engines: {node: '>=0.10'}
 
+  leac@0.6.0:
+    resolution: {integrity: sha512-y+SqErxb8h7nE/fiEX07jsbuhrpO9lL8eca7/Y1nuWV2moNlXhyd59iDGcRf6moVyDMbmTNzL40SUyrFU/yDpg==}
+
   levn@0.4.1:
     resolution: {integrity: sha512-+bT2uH4E5LGE7h/n3evcS/sQlJXCpIp6ym8OWJ5eV6+67Dsql/LaaT7qJBAt2rzfoa/5QBGBhxDix1dMt2kQKQ==}
     engines: {node: '>= 0.8.0'}
@@ -3341,9 +3491,19 @@ packages:
     resolution: {integrity: sha512-WWC0ZuMzCyDHYCasEGs4IPvLyTGftYwh6wIEOULOF0HXcqZlhwRzrK0w2VUlxWA98xnvb/jszw4ZSkJ6ADpM6Q==}
     engines: {node: '>=0.10.0'}
 
+  marked@7.0.4:
+    resolution: {integrity: sha512-t8eP0dXRJMtMvBojtkcsA7n48BkauktUKzfkPSCq85ZMTJ0v76Rke4DYz01omYpPTUh4p/f7HePgRo3ebG8+QQ==}
+    engines: {node: '>= 16'}
+    hasBin: true
+
   math-intrinsics@1.1.0:
     resolution: {integrity: sha512-/IXtbwEk5HTPyEwyKX6hGkYXxM9nbj64B+ilVJnC/R6B0pH5G4V3b0pVbL7DBj4tkhBAppbQUlf6F6Xl9LHu1g==}
     engines: {node: '>= 0.4'}
+
+  md-to-react-email@5.0.5:
+    resolution: {integrity: sha512-OvAXqwq57uOk+WZqFFNCMZz8yDp8BD3WazW1wAKHUrPbbdr89K9DWS6JXY09vd9xNdPNeurI8DU/X4flcfaD8A==}
+    peerDependencies:
+      react: ^18.0 || ^19.0
 
   mdast-util-definitions@5.1.2:
     resolution: {integrity: sha512-8SVPMuHqlPME/z3gqVwWY4zVXn8lqKv/pAhC57FuJ40ImXyBpmO5ukh98zB2v7Blql2FiHjHv9LVztSIqjY+MA==}
@@ -3536,9 +3696,9 @@ packages:
       react: '>=16.0.0'
       react-dom: '>=16.0.0'
 
-  next@14.1.4:
-    resolution: {integrity: sha512-1WTaXeSrUwlz/XcnhGTY7+8eiaFvdet5z9u3V2jb+Ek1vFo0VhHKSAIJvDWfQpttWjnyw14kBeq28TPq7bTeEQ==}
-    engines: {node: '>=18.17.0'}
+  next@13.5.11:
+    resolution: {integrity: sha512-WUPJ6WbAX9tdC86kGTu92qkrRdgRqVrY++nwM+shmWQwmyxt4zhZfR59moXSI4N8GDYCBY3lIAqhzjDd4rTC8Q==}
+    engines: {node: '>=16.14.0'}
     hasBin: true
     peerDependencies:
       '@opentelemetry/api': ^1.1.0
@@ -3640,6 +3800,9 @@ packages:
   parse5@6.0.1:
     resolution: {integrity: sha512-Ofn/CTFzRGTTxwpNEs9PP93gXShHcTq255nzRYSKe8AkVpZY7e1fpmTfOyoIvjP5HG7Z2ZM7VS9PPhQGW2pOpw==}
 
+  parseley@0.12.1:
+    resolution: {integrity: sha512-e6qHKe3a9HWr0oMRVDTRhKce+bRO8VGQR3NyVwcjwrbhMmFCX9KszEV35+rn4AdilFAq9VPxP/Fe1wC9Qjd2lw==}
+
   pascal-case@3.1.2:
     resolution: {integrity: sha512-uWlGT3YSnK9x3BQJaOdcZwrnV6hPpd8jFH1/ucpiLRPh/2zCVJKS19E4GvYHvaCcACn3foXZ0cLB9Wrx1KGe5g==}
 
@@ -3662,6 +3825,9 @@ packages:
     resolution: {integrity: sha512-gDKb8aZMDeD/tZWs9P6+q0J9Mwkdl6xMV8TjnGP3qJVJ06bdMgkbBlLU8IdfOsIsFz2BW1rNVT3XuNEl8zPAvw==}
     engines: {node: '>=8'}
 
+  peberminta@0.9.0:
+    resolution: {integrity: sha512-XIxfHpEuSJbITd1H3EeQwpcZbTLHc+VVr8ANI9t5sit565tsI4/xK3KWTUFE2e6QiangUkh3B0jihzmGnNrRsQ==}
+
   periscopic@3.1.0:
     resolution: {integrity: sha512-vKiQ8RRtkl9P+r/+oefh25C3fhybptkHKCZSPlcXiJux2tJF55GnEj3BVn4A5gKfq9NWWXXrxkHBwVPUfH0opw==}
 
@@ -3683,6 +3849,15 @@ packages:
   prelude-ls@1.2.1:
     resolution: {integrity: sha512-vkcDPrRZo1QZLbn5RLGPpg/WmIQ65qoWWhcGKf/b5eplkkarX0m9z8ppCat4mlOqUsWpyNuYgO3VRyrYHSzX5g==}
     engines: {node: '>= 0.8.0'}
+
+  prettier@3.5.3:
+    resolution: {integrity: sha512-QQtaxnoDJeAkDvDKWCLiwIXkTgRhwYDEQCghU9Z6q03iyek/rxRh/2lC3HB7P8sWT2xC/y5JDctPLBIGzHKbhw==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  prismjs@1.30.0:
+    resolution: {integrity: sha512-DEvV2ZF2r2/63V+tK8hQvrR2ZGn10srHbXviTlcv7Kpzw8jWiNTqbVgjO3IY8RxrrOUF8VPMQQFysYYYv0YZxw==}
+    engines: {node: '>=6'}
 
   prop-types@15.8.1:
     resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==}
@@ -3742,6 +3917,9 @@ packages:
 
   react-is@16.13.1:
     resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==}
+
+  react-promise-suspense@0.3.4:
+    resolution: {integrity: sha512-I42jl7L3Ze6kZaq+7zXWSunBa3b1on5yfvUW6Eo/3fFOj6dZ5Bqmcd264nJbTK/gn1HjjILAjSwnZbV4RpSaNQ==}
 
   react-remove-scroll-bar@2.3.6:
     resolution: {integrity: sha512-DtSYaao4mBmX+HDo5YWYdBWQwYIQQshUV/dVxFxK+KM26Wjwp1gZ6rv6OC3oujI6Bfu6Xyg3TwK533AQutsn/g==}
@@ -3854,6 +4032,10 @@ packages:
     resolution: {integrity: sha512-fGxEI7+wsG9xrvdjsrlmL22OMTTiHRwAMroiEeMgq8gzoLC/PQr7RsRDSTLUg/bZAZtF+TVIkHc6/4RIKrui+Q==}
     engines: {node: '>=0.10.0'}
 
+  resend@4.4.1:
+    resolution: {integrity: sha512-FR22bzMW3VfoyZSBc8ScGo8ShrMWHmWB0G3FrispzWCnYSEEK5M7pyRvZtInKmM/09lsJETKc2q66mX+dXPSmg==}
+    engines: {node: '>=18'}
+
   resolve-from@4.0.0:
     resolution: {integrity: sha512-pb/MYmXstAkysRFx8piNI1tGFNQIFA3vkE3Gq4EuA1dF6gHp/+vgZqsCGJapvy8N3Q+4o7FwvquPJcnZ7RYy4g==}
     engines: {node: '>=4'}
@@ -3898,6 +4080,9 @@ packages:
   section-matter@1.0.0:
     resolution: {integrity: sha512-vfD3pmTzGpufjScBh50YHKzEu2lxBWhVEHsNGoEXmCmn2hKGfeNLYMzCJpe8cD7gqX7TJluOVpBkAequ6dgMmA==}
     engines: {node: '>=4'}
+
+  selderee@0.11.0:
+    resolution: {integrity: sha512-5TF+l7p4+OsnP8BCCvSyZiSPc4x4//p5uPwK8TCnVPJYRmU2aYKMpOXvw8zM5a5JvuuCGN1jmsMwuU2W02ukfA==}
 
   semver@6.3.1:
     resolution: {integrity: sha512-BR7VvDCVHO+q2xBEWskxS6DJE1qRnb7DxzUrogb71CWoSficBxYsiAGd+Kl0mmq/MprG9yArRkyrQxTO6XjMzA==}
@@ -4223,6 +4408,10 @@ packages:
 
   vfile@5.3.7:
     resolution: {integrity: sha512-r7qlzkgErKjobAmyNIkkSpizsFPYiUPuJb5pNW1RB4JcYVZhs4lIbVqk8XPk033CV/1z8ss5pkax8SuhGpcG8g==}
+
+  watchpack@2.4.0:
+    resolution: {integrity: sha512-Lcvm7MGST/4fup+ifyKi2hjyIAwcdI4HRgtvTpIUxBRhB+RFtUh8XtDOxUfctVCnhVi+QQj49i91OyvzkJl6cg==}
+    engines: {node: '>=10.13.0'}
 
   web-namespaces@2.0.1:
     resolution: {integrity: sha512-bKr1DkiNa2krS7qxNtdrtHAmzuYGFQLiQ13TsorsdT6ULTkPLKuu5+GsFpDlg6JFjUTwX2DyhMPG2be8uPrqsQ==}
@@ -6176,37 +6365,37 @@ snapshots:
     transitivePeerDependencies:
       - supports-color
 
-  '@next/env@14.1.4': {}
+  '@next/env@13.5.11': {}
 
   '@next/eslint-plugin-next@13.3.1':
     dependencies:
       glob: 7.1.7
 
-  '@next/swc-darwin-arm64@14.1.4':
+  '@next/swc-darwin-arm64@13.5.9':
     optional: true
 
-  '@next/swc-darwin-x64@14.1.4':
+  '@next/swc-darwin-x64@13.5.9':
     optional: true
 
-  '@next/swc-linux-arm64-gnu@14.1.4':
+  '@next/swc-linux-arm64-gnu@13.5.9':
     optional: true
 
-  '@next/swc-linux-arm64-musl@14.1.4':
+  '@next/swc-linux-arm64-musl@13.5.9':
     optional: true
 
-  '@next/swc-linux-x64-gnu@14.1.4':
+  '@next/swc-linux-x64-gnu@13.5.9':
     optional: true
 
-  '@next/swc-linux-x64-musl@14.1.4':
+  '@next/swc-linux-x64-musl@13.5.9':
     optional: true
 
-  '@next/swc-win32-arm64-msvc@14.1.4':
+  '@next/swc-win32-arm64-msvc@13.5.9':
     optional: true
 
-  '@next/swc-win32-ia32-msvc@14.1.4':
+  '@next/swc-win32-ia32-msvc@13.5.9':
     optional: true
 
-  '@next/swc-win32-x64-msvc@14.1.4':
+  '@next/swc-win32-x64-msvc@13.5.9':
     optional: true
 
   '@nodelib/fs.scandir@2.1.5':
@@ -6385,6 +6574,118 @@ snapshots:
       clsx: 2.1.0
       react: 18.2.0
 
+  '@react-email/body@0.0.11(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/button@0.0.19(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/code-block@0.0.12(react@18.2.0)':
+    dependencies:
+      prismjs: 1.30.0
+      react: 18.2.0
+
+  '@react-email/code-inline@0.0.5(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/column@0.0.13(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/components@0.0.36(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      '@react-email/body': 0.0.11(react@18.2.0)
+      '@react-email/button': 0.0.19(react@18.2.0)
+      '@react-email/code-block': 0.0.12(react@18.2.0)
+      '@react-email/code-inline': 0.0.5(react@18.2.0)
+      '@react-email/column': 0.0.13(react@18.2.0)
+      '@react-email/container': 0.0.15(react@18.2.0)
+      '@react-email/font': 0.0.9(react@18.2.0)
+      '@react-email/head': 0.0.12(react@18.2.0)
+      '@react-email/heading': 0.0.15(react@18.2.0)
+      '@react-email/hr': 0.0.11(react@18.2.0)
+      '@react-email/html': 0.0.11(react@18.2.0)
+      '@react-email/img': 0.0.11(react@18.2.0)
+      '@react-email/link': 0.0.12(react@18.2.0)
+      '@react-email/markdown': 0.0.14(react@18.2.0)
+      '@react-email/preview': 0.0.12(react@18.2.0)
+      '@react-email/render': 1.0.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      '@react-email/row': 0.0.12(react@18.2.0)
+      '@react-email/section': 0.0.16(react@18.2.0)
+      '@react-email/tailwind': 1.0.4(react@18.2.0)
+      '@react-email/text': 0.1.1(react@18.2.0)
+      react: 18.2.0
+    transitivePeerDependencies:
+      - react-dom
+
+  '@react-email/container@0.0.15(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/font@0.0.9(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/head@0.0.12(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/heading@0.0.15(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/hr@0.0.11(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/html@0.0.11(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/img@0.0.11(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/link@0.0.12(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/markdown@0.0.14(react@18.2.0)':
+    dependencies:
+      md-to-react-email: 5.0.5(react@18.2.0)
+      react: 18.2.0
+
+  '@react-email/preview@0.0.12(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/render@1.0.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)':
+    dependencies:
+      html-to-text: 9.0.5
+      prettier: 3.5.3
+      react: 18.2.0
+      react-dom: 18.2.0(react@18.2.0)
+      react-promise-suspense: 0.3.4
+
+  '@react-email/row@0.0.12(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/section@0.0.16(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/tailwind@1.0.4(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
+  '@react-email/text@0.1.1(react@18.2.0)':
+    dependencies:
+      react: 18.2.0
+
   '@react-stately/utils@3.9.1(react@18.2.0)':
     dependencies:
       '@swc/helpers': 0.5.8
@@ -6536,6 +6837,11 @@ snapshots:
     dependencies:
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
+
+  '@selderee/plugin-htmlparser2@0.11.0':
+    dependencies:
+      domhandler: 5.0.3
+      selderee: 0.11.0
 
   '@svgr/babel-plugin-add-jsx-attribute@7.0.0(@babel/core@7.24.4)':
     dependencies:
@@ -7661,6 +7967,8 @@ snapshots:
 
   extend@3.0.2: {}
 
+  fast-deep-equal@2.0.1: {}
+
   fast-deep-equal@3.1.3: {}
 
   fast-glob@3.3.2:
@@ -7813,6 +8121,8 @@ snapshots:
   glob-parent@6.0.2:
     dependencies:
       is-glob: 4.0.3
+
+  glob-to-regexp@0.4.1: {}
 
   glob@7.1.7:
     dependencies:
@@ -7981,7 +8291,22 @@ snapshots:
     dependencies:
       react-is: 16.13.1
 
+  html-to-text@9.0.5:
+    dependencies:
+      '@selderee/plugin-htmlparser2': 0.11.0
+      deepmerge: 4.3.1
+      dom-serializer: 2.0.0
+      htmlparser2: 8.0.2
+      selderee: 0.11.0
+
   html-void-elements@2.0.1: {}
+
+  htmlparser2@8.0.2:
+    dependencies:
+      domelementtype: 2.3.0
+      domhandler: 5.0.3
+      domutils: 3.1.0
+      entities: 4.5.0
 
   ignore@5.3.1: {}
 
@@ -8204,6 +8529,8 @@ snapshots:
     dependencies:
       language-subtag-registry: 0.3.22
 
+  leac@0.6.0: {}
+
   levn@0.4.1:
     dependencies:
       prelude-ls: 1.2.1
@@ -8245,7 +8572,14 @@ snapshots:
 
   markdown-extensions@1.1.1: {}
 
+  marked@7.0.4: {}
+
   math-intrinsics@1.1.0: {}
+
+  md-to-react-email@5.0.5(react@18.2.0):
+    dependencies:
+      marked: 7.0.4
+      react: 18.2.0
 
   mdast-util-definitions@5.1.2:
     dependencies:
@@ -8619,12 +8953,12 @@ snapshots:
 
   natural-compare@1.4.0: {}
 
-  next-contentlayer@0.3.4(contentlayer@0.3.4(esbuild@0.18.20))(esbuild@0.18.20)(next@14.1.4(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  next-contentlayer@0.3.4(contentlayer@0.3.4(esbuild@0.18.20))(esbuild@0.18.20)(next@13.5.11(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
       '@contentlayer/core': 0.3.4(esbuild@0.18.20)
       '@contentlayer/utils': 0.3.4
       contentlayer: 0.3.4(esbuild@0.18.20)
-      next: 14.1.4(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      next: 13.5.11(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
     transitivePeerDependencies:
@@ -8633,33 +8967,33 @@ snapshots:
       - markdown-wasm
       - supports-color
 
-  next-seo@6.5.0(next@14.1.4(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  next-seo@6.5.0(next@13.5.11(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0))(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
-      next: 14.1.4(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+      next: 13.5.11(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
 
-  next@14.1.4(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+  next@13.5.11(@babel/core@7.24.4)(@opentelemetry/api@1.9.0)(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
     dependencies:
-      '@next/env': 14.1.4
+      '@next/env': 13.5.11
       '@swc/helpers': 0.5.2
       busboy: 1.6.0
       caniuse-lite: 1.0.30001607
-      graceful-fs: 4.2.11
       postcss: 8.4.31
       react: 18.2.0
       react-dom: 18.2.0(react@18.2.0)
       styled-jsx: 5.1.1(@babel/core@7.24.4)(react@18.2.0)
+      watchpack: 2.4.0
     optionalDependencies:
-      '@next/swc-darwin-arm64': 14.1.4
-      '@next/swc-darwin-x64': 14.1.4
-      '@next/swc-linux-arm64-gnu': 14.1.4
-      '@next/swc-linux-arm64-musl': 14.1.4
-      '@next/swc-linux-x64-gnu': 14.1.4
-      '@next/swc-linux-x64-musl': 14.1.4
-      '@next/swc-win32-arm64-msvc': 14.1.4
-      '@next/swc-win32-ia32-msvc': 14.1.4
-      '@next/swc-win32-x64-msvc': 14.1.4
+      '@next/swc-darwin-arm64': 13.5.9
+      '@next/swc-darwin-x64': 13.5.9
+      '@next/swc-linux-arm64-gnu': 13.5.9
+      '@next/swc-linux-arm64-musl': 13.5.9
+      '@next/swc-linux-x64-gnu': 13.5.9
+      '@next/swc-linux-x64-musl': 13.5.9
+      '@next/swc-win32-arm64-msvc': 13.5.9
+      '@next/swc-win32-ia32-msvc': 13.5.9
+      '@next/swc-win32-x64-msvc': 13.5.9
       '@opentelemetry/api': 1.9.0
     transitivePeerDependencies:
       - '@babel/core'
@@ -8777,6 +9111,11 @@ snapshots:
 
   parse5@6.0.1: {}
 
+  parseley@0.12.1:
+    dependencies:
+      leac: 0.6.0
+      peberminta: 0.9.0
+
   pascal-case@3.1.2:
     dependencies:
       no-case: 3.0.4
@@ -8791,6 +9130,8 @@ snapshots:
   path-parse@1.0.7: {}
 
   path-type@4.0.0: {}
+
+  peberminta@0.9.0: {}
 
   periscopic@3.1.0:
     dependencies:
@@ -8811,6 +9152,10 @@ snapshots:
       source-map-js: 1.2.0
 
   prelude-ls@1.2.1: {}
+
+  prettier@3.5.3: {}
+
+  prismjs@1.30.0: {}
 
   prop-types@15.8.1:
     dependencies:
@@ -8881,6 +9226,10 @@ snapshots:
       react: 18.2.0
 
   react-is@16.13.1: {}
+
+  react-promise-suspense@0.3.4:
+    dependencies:
+      fast-deep-equal: 2.0.1
 
   react-remove-scroll-bar@2.3.6(@types/react@18.2.0)(react@18.2.0):
     dependencies:
@@ -9021,6 +9370,13 @@ snapshots:
 
   require-directory@2.1.1: {}
 
+  resend@4.4.1(react-dom@18.2.0(react@18.2.0))(react@18.2.0):
+    dependencies:
+      '@react-email/render': 1.0.6(react-dom@18.2.0(react@18.2.0))(react@18.2.0)
+    transitivePeerDependencies:
+      - react
+      - react-dom
+
   resolve-from@4.0.0: {}
 
   resolve-pkg-maps@1.0.0: {}
@@ -9072,6 +9428,10 @@ snapshots:
     dependencies:
       extend-shallow: 2.0.1
       kind-of: 6.0.3
+
+  selderee@0.11.0:
+    dependencies:
+      parseley: 0.12.1
 
   semver@6.3.1: {}
 
@@ -9419,6 +9779,11 @@ snapshots:
       is-buffer: 2.0.5
       unist-util-stringify-position: 3.0.3
       vfile-message: 3.1.4
+
+  watchpack@2.4.0:
+    dependencies:
+      glob-to-regexp: 0.4.1
+      graceful-fs: 4.2.11
 
   web-namespaces@2.0.1: {}
 
